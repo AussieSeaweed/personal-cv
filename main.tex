@@ -1,0 +1,255 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{etaremune}
+\usepackage{etoolbox}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ltablex}
+\usepackage{tabularx}
+
+\newtoggle{verbose}
+\settoggle{verbose}{false}
+
+\title{Curriculum Vitae}
+\author{Juho Kim}
+\date{April 2024}
+
+\begin{document}
+
+	\maketitle
+
+	\section*{Education}
+
+	\begin{tabularx}{\textwidth}{r X}
+		& \textbf{\href{https://www.utoronto.ca/}{University of Toronto}} \\*
+		09/2019 -- 05/2025 & \textit{BASc in Engineering Science (Machine Intelligence)} \\*
+		& {\small GPA: 3.5/4.0} \\*
+		& {\small Thesis: Observing the Southern US Honor Culture Using Large-Scale Social Media Analysis} \\*
+		& {\small Supervisor: Michael Guerzhoy} \\*
+		\iftoggle{verbose}{
+			\addlinespace
+			& \textbf{\href{https://schoolweb.tdsb.on.ca/yorkmillsci/}{York Mills Collegiate Institute}} \\*
+			09/2016 -- 06/2019 & \textit{High School Diploma} \\*
+		}{}
+	\end{tabularx}
+
+	\section*{Papers}
+
+	\subsection*{Journals}
+
+	\begin{etaremune}
+		\item \textbf{J. Kim} (2023). PokerKit: A Comprehensive Python Library for Fine-Grained Multi-Variant Poker Game Simulations. In: \textit{IEEE Transactions on Games}. {\small DOI: \href{https://doi.org/10.1109/TG.2023.3325637}{10.1109/TG.2023.3325637}.}
+	\end{etaremune}
+
+	\subsection*{Conferences and Workshops}
+
+	\begin{etaremune}
+		\item \textbf{J. Kim} (2024). Recording and Describing Poker Games. In: \textit{2024 IEEE Conference on Games (CoG)}. {\small (Acceptance rate: 41.1\%)} % DOI: \href{https://doi.org/10.1109/CoGTODO}{10.1109/CoGTODO}.
+		\item \textbf{J. Kim}, M. Guerzhoy (2024). Extended Abstract: Observing the Southern US Culture of Honor Using Large-Scale Social Media Analysis. In: \textit{10\textsuperscript{th} International Conference on Computational Social Science IC\textsuperscript{2}S\textsuperscript{2}}. % {\small (Acceptance rate: TODO\%)}
+	\end{etaremune}
+
+	\section*{Experience}
+
+	\subsection*{Employment}
+
+	\begin{tabularx}{\textwidth}{r X}
+		& \textbf{\href{https://www.phenompoker.com/}{Phenom Poker S.A.}} \\*
+		04/2024 -- Present & \textit{Software Consultant} \\*
+		& {\small Researched over 30 regional poker variants and encoded their rules into software.} \\*
+		& {\small Implemented real-time control of poker tables in cash-game and tournament settings.} \\
+		\addlinespace
+		& \textbf{\href{https://a5labs.co/}{A5 Labs}} \\*
+		01/2024 -- Present & \textit{Software Consultant} \\*
+		& {\small Created a server environment to benchmark the performances of various poker AI agents and humans.} \\*
+		& {\small Implemented various protocols to facilitate poker server/client communications.} \\
+		\addlinespace
+		& \textbf{\href{https://www.prattwhitney.com/}{Pratt \& Whitney Canada}} \\*
+		08/2023 -- 12/2023 & \textit{Automation Engineer Intern} \\*
+		& {\small Digitalized engine part definitions, manufacturing, and uses in CAD software, through CNC and CMM programming.} \\*
+		& {\small Developed algorithms to automate and increase the efficiency of digitalization activities.} \\
+		\iftoggle{verbose}{
+			\addlinespace
+			& \textbf{\href{https://jasminechatbot.com/}{Jasmine AI}} \\*
+			06/2023 -- 08/2023 & \textit{Software Consultant} \\*
+			& {\small Developed the company's real estate chatbot by leveraging OpenAI API and prompt engineering.} \\*
+			& {\small Developed the company's backend server using Django from scratch.} \\
+		}{}
+		\addlinespace
+		& \textbf{\href{https://inside.rotman.utoronto.ca/financelab/}{BMO Financial Group Finance Research and Trading Lab}} \\*
+		05/2023 -- 08/2023 & \textit{Lab Assistant} \\*
+		& {\small Analyzed and Processed daily Trade and Quote data from U.S. equity exchanges for educational trading case development.} \\*
+		& {\small Researched statistical methods and techniques for analyzing student learning outcomes.} \\
+		\addlinespace
+		& \textbf{\href{https://www.huawei.com/ca/}{Huawei Technologies Canada Co., Ltd.}} \\*
+		05/2022 -- 05/2023 & \textit{Software Engineer Intern} \\*
+		& {\small Developed the Huawei Distributed Cache Services for Redis featuring conflict-free replicated data types and commands.} \\*
+		& {\small Automated deployments and integration test suites of cloud database services to achieve around 4000\% speedup.} \\
+		\addlinespace
+		& \textbf{\href{https://introspect.ca/}{Introspect Technology}} \\*
+		05/2021 -- 08/2021 & \textit{Software Engineer Intern} \\*
+		& {\small Designed or improved testing suites for high-speed digital applications and measurement equipment like jitter-clock, eye scans, and BERT scans.} \\*
+		& {\small Researched and implemented various high-speed interface standards and specifications such as SLVS-EC and DisplayPort.} \\*
+	\end{tabularx}
+
+	\subsection*{Extracurriculars}
+
+	\begin{tabularx}{\textwidth}{r X}
+		& \textbf{\href{https://uoftcprg.com/}{University of Toronto Computer Poker Student Research Group}} \\*
+		05/2023 -- Present & \textit{Director} \\*
+		& {\small Spearheaded numerous poker projects, some of which have seen widespread adoption in both the industry and academia.} \\*
+		& {\small Published two papers in academic venues.} \\*
+		& {\small Formed partnerships and consulted firms in the poker software space.} \\
+		\addlinespace
+		& \textbf{\href{https://www.blueskysolar.org/}{Blue Sky Solar Racing}} \\*
+		06/2023 -- Present & \textit{Software Lead} \\*
+		& {\small Developed a centralized vehicle computing platform incorporating fail-safe designs for various failover scenarios.} \\*
+		& {\small Implemented unit tests to test vehicle code logic through hardware mocking.} \\*
+		& {\small Wrote integration tests to test the vehicle in a safe-controlled environment.} \\*
+		08/2022 -- 06/2023 & \textit{Software Member} \\*
+		& {\small Developed a distributed control system for the solar vehicle through embedded C software design on STM32 microcontrollers.} \\*
+		& {\small Wrote a battery state-of-charge estimation algorithm with an extended Kalman filter.} \\
+		\addlinespace
+		& \textbf{\href{https://uoftpoker.com/}{University of Toronto Poker Club}} \\*
+		05/2020 -- 05/2023 & \textit{Co-President / Events Lead} \\*
+		& {\small Managed and advertized various poker events on the University of Toronto St. George campus.} \\*
+		& {\small Formed coalitions and partnerships with fellow student poker groups in neighbouring universities.} \\*
+		\iftoggle{verbose}{
+			09/2019 -- 05/2020 & \textit{Member} \\
+			\addlinespace
+			& \textbf{\href{https://schoolweb.tdsb.on.ca/yorkmillsci/Departments/Computer-Science/Clubs}{York Mills Collegiate Institute Programming Club}} \\*
+			06/2018 -- 06/2019 & \textit{Co-President} \\*
+			& {\small Hosted workshops and lectures on various algorithms and data structures for high school students.} \\*
+			& {\small Formed teams and participated in local programming competitions.} \\*
+			09/2017 -- 06/2018 & \textit{Member} \\*
+			& {\small Participated in local programming competitions.} \\*
+		}{}
+	\end{tabularx}
+
+	\section*{Projects}
+
+	\subsection*{Software}
+
+	\begin{itemize}
+		\item PokerKit: An open-source Python library for poker game simulations, hand evaluations, and statistical analysis. {\small GitHub: \url{https://github.com/uoftcprg/pokerkit}.}
+		\item Cardroom: A Django application for poker tournament and table management. {\small GitHub: \url{https://github.com/uoftcprg/cardroom}.}
+		\iftoggle{verbose}{
+			\item BitPoker: A Bittensor subnet for AI-driven poker decision-making. {\small GitHub: \url{https://github.com/uoftcprg/bitpoker}.}
+		}{}
+		\item Revolution: The software for the next generation electrical system for Blue Sky Solar Racing. {\small GitHub: \url{https://github.com/blueskysolarracing/revolution}.}
+		\iftoggle{verbose}{
+			\item BattLib: A library for battery SOC calculation using EKF. {\small GitHub: \url{https://github.com/blueskysolarracing/battlib}.}
+			\item ICLib: A collection of integrated circuit libraries in pure Python. {\small GitHub: \url{https://github.com/blueskysolarracing/iclib}.}
+			\item Door: A comprehensive Python library for synchronization proxies. {\small GitHub: \url{https://github.com/blueskysolarracing/door}.}
+			\item Borealis: Blue Sky Solar Racing's Gen11 vehicle compute platform. {\small GitHub: \url{https://github.com/blueskysolarracing/borealis}.}
+		}{}
+		\item RITC: A Python library for interacting with the Rotman Interactive Trader Market Simulator Client Application. {\small GitHub: \url{https://github.com/AussieSeaweed/ritc}.}
+		\iftoggle{verbose}{
+			\item math2: A Python package for various math functions. {\small GitHub: \url{https://github.com/AussieSeaweed/math2}.}
+			\item Snek AI: An AI program that plays the snek game. {\small GitHub: \url{https://github.com/AussieSeaweed/snek-ai}.}
+			\item Data Structure Visualization: A visualization of a binary search tree, created using processing. {\small GitHub: \url{https://github.com/AussieSeaweed/data-structure-visualization}.}
+			\item Zombies and Monies: A top-down 2D zombie shooter game. {\small GitHub: \url{https://github.com/AussieSeaweed/zombies-and-monies}.}
+			\item Tank Game Offline: A top-down 2D tank shooter game. {\small GitHub: \url{https://github.com/AussieSeaweed/tank-game-offline}.}
+			\item Crimson: A simple 3D object viewer. {\small GitHub: \url{https://github.com/AussieSeaweed/crimson}.}
+			\item Chess Classic: A Modern Chess GUI. {\small GitHub: \url{https://github.com/AussieSeaweed/chess-classic}.}
+		}{}
+	\end{itemize}
+
+	\subsection*{Standards}
+
+	\begin{itemize}
+		\item Poker Hand History File Format Specification. {\small GitHub: \url{https://github.com/uoftcprg/phh-std}.}
+	\end{itemize}
+
+	\subsection*{Datasets}
+
+	\begin{itemize}
+		\item Poker Hand Histories: A dataset of poker hand histories. {\small DOI: \href{https://doi.org/10.5281/zenodo.10796885}{10.5281/zenodo.10796885}. GitHub: \url{https://github.com/uoftcprg/phh-dataset}.}
+		\item Poker Hand Strengths: A dataset of poker hand strengths. {\small DOI: \href{https://doi.org/10.5281/zenodo.10797026}{10.5281/zenodo.10797026}. GitHub: \url{https://github.com/uoftcprg/phs-dataset}.}
+	\end{itemize}
+
+	\iftoggle{verbose}{
+		\subsection*{Websites}
+
+		\begin{itemize}
+			\item University of Toronto Poker Club. {\small URL: \url{https://uoftpoker.com/}. GitHub: \url{https://github.com/uoftcprg/uoftpoker-website}.}
+			\item University of Toronto Computer Poker Research Group. {\small URL: \url{https://uoftcprg.com/}. GitHub: \url{https://github.com/uoftcprg/uoftcprg-website}.}
+			\item Personal Website: My personal website. {\small URL: \url{https://juhokim.net/}. GitHub: \url{https://github.com/AussieSeaweed/personal-website}.}
+		\end{itemize}
+	}{}
+
+	\section*{Honors \& Awards}
+
+	\begin{tabularx}{\textwidth}{r X}
+		& \textbf{\href{https://terminal.c1games.com/}{Spring 2023 Terminal Midwest Regional}} \\*
+		03/2023 & \textit{\href{https://www.credential.net/950d22c3-1b72-45d8-bf12-732c7ff54927}{1st Place}} \\*
+		& {\small Issued by: Citadel; Citadel Securities; and Correlation One} \\*
+		& {\small Awarded the first prize for developing the best algorithm in the Midwest Region from a field of 100 competitors.} \\
+		\addlinespace
+		& \textbf{\href{https://ritc.rotman.utoronto.ca/}{2023 Rotman International Trading Competition}} \\*
+		02/2023 & \textit{4th Place} \\*
+		& {\small Issued by: Rotman School of Management; University of Toronto; and BMO Finance Group Finance Research and Trading Lab} \\*
+		& {\small Placed fourth place overall and awarded first prize in the algorithm case of the trading competition from a field of 40 universities.} \\
+		\iftoggle{verbose}{
+			\addlinespace
+			& \textbf{\href{https://inside.rotman.utoronto.ca/financelab/}{2023 Rotman Online Trading Competition}} \\*
+			01/2023 & \textit{2nd Place} \\*
+			& {\small Issued by: Rotman School of Management; University of Toronto; and BMO Finance Group Finance Research and Trading Lab} \\*
+			& {\small Qualified to represent the University of Toronto in the Rotman International Trading Competition by placing in the top two teams among around 100 teams.} \\
+			\addlinespace
+			& \textbf{\href{https://engsci.utoronto.ca/}{University of Toronto Faculty of Applied Science \& Engineering}} \\*
+			Winter 2022 & \textit{Dean's Honour List} \\*
+			Fall 2021 & \textit{Dean's Honour List} \\*
+			Winter 2020 & \textit{Dean's Honour List} \\*
+			Fall 2019 & \textit{Dean's Honour List} \\*
+			& {\small Issued by: University of Toronto} \\
+		}{}
+		\addlinespace
+		& \textbf{\href{https://www.cemc.uwaterloo.ca/contests/ccc-cco.html}{2019 Canadian Computing Olympiad}} \\*
+		05/2019 & \textit{Silver Medalist} \\*
+		& {\small Issued by: University of Waterloo} \\*
+		& {\small Competed in a two-day long competitive programming competition from a field of 30 top high-schoolers in Canada.} \\
+		\iftoggle{verbose}{
+			\addlinespace
+			& \textbf{\href{https://www.cemc.uwaterloo.ca/contests/ccc-cco.html}{2019 Canadian Computing Competition}} \\*
+			02/2019 & \textit{Group 1} \\*
+			& {\small Issued by: University of Waterloo} \\*
+			& {\small Qualified for Canadian Computing Olympiads from a field of 2000 high school students by scoring in the topmost score bracket.} \\
+			\addlinespace
+			& \textbf{\href{https://schoolweb.tdsb.on.ca/yorkmillsci/}{York Mills Collegiate Institute}} \\*
+			2019 & \textit{Computer Science Academic Proficiency Award} \\*
+			2018 & \textit{Computer Science Academic Proficiency Award} \\*
+			2017 & \textit{Computer Science Academic Proficiency Award} \\*
+			& {\small Issued by: York Mills Collegiate Institute} \\
+			\addlinespace
+			& \textbf{\href{https://www.cemc.uwaterloo.ca/contests/gauss.html}{2014 Gauss Contest}} \\*
+			May 2014 & \textit{Canadian Student Honour Roll -- Grade 7} \\*
+			& {\small Issued by University of Waterloo.}. \\*
+			& {\small Achieved a perfect score.} \\*
+		}{}
+	\end{tabularx}
+
+	\section*{Standardized Tests}
+
+	\begin{itemize}[noitemsep]
+		\item GRE: 162 in Verbal (89th Percentile); 167 in Quant (83rd Percentile); 3.5 in AWA (38th Percentile)
+		\item IELTS: Band 8.5 (9.0 in Listening, 9.0 in Reading, 7.0 in Writing, 8.0 in Speaking)
+	\end{itemize}
+
+	\section*{Personal Information}
+
+	\begin{itemize}[noitemsep]
+		\item Full Name: Juho Kim
+		\item Citizenship: Canada
+		\item Languages: English and Korean
+		\item Address: 2947 St Clair Ave E East York, ON M4B 1N9
+		\item Phone: +1 (647) 922-6192
+		\item Email: \href{mailto:juho-kim@outlook.com}{juho-kim@outlook.com}
+		\item Personal website: \url{https://juhokim.net/}
+		\item Github: \url{https://github.com/AussieSeaweed/}
+		\item LinkedIn: \url{https://www.linkedin.com/in/aussieseaweed/}
+	\end{itemize}
+
+\end{document}
